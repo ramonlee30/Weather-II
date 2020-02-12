@@ -6,29 +6,51 @@
 <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
+
  <body>
 <div id = "app">
-  <div class ="holder headline">
-    Weather Journal App
-  </div>
-  <div class ="holder zip">
-    <label for="zip">Enter Zipcode here</label>
-    <input type="text" id="zip" placeholder="enter zip code here">
-  </div>
+ 
+ <div class="holder headline">
+        <div class="container">
+            <nav class="navbar navbar-holder headline">
+                <a href="#" class="navbar-brand">Weather Journal App</a>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+ 
+ <div class="holder zip">
+            <div class="col-zip">
+
+                <div class="input-holder entry">
+                    <input type="text" class="form-control input-search" placeholder="Search for a Zip"
+                        aria-label="Zip search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="generate"><i class="submit"></i>
+                        </span>
+                    </div>
+                </div>
+ 
   <div class ="holder feel">
     <label for="feelings">How are you feeling today?</label>
     <textarea class= "myInput" id="feelings" placeholder="Enter your feelings here" rows="9" cols="50"></textarea>
     <button id="generate" type = "submit"> Generate </button>
   </div>
-  <div class ="holder entry">
-    <div class = "title">Most Recent Entry</div>
-   <div id = "entryHolder">
-    <div id = "date"></div> 
-   <div id = "temp"></div>
-   <div id = "content"></div>
-  </div>
-  </div>
-  </div>
+ 
+ <h4 class="holder entry"><em>Recent Searches</em></h4>
+                <ul class="list-zip"></ul>
+            </div>
+            <div class="col offset-md-1">
+                <div class="alert alert" role="alert">
+                    Nothing was found for that search result.
+                </div>
+                <div id="today"></div>
+                <div class="holder forecast-row"></div>
+            </div>
+        </div>
+    </div>
+          
+ 
 <script src="app.js" type="text/javascript"></script>
 
 </body>

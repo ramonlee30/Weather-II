@@ -1,5 +1,6 @@
 body{
-    background: #fffff8;
+    height: 100vh;
+    background: #29546e;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
@@ -8,43 +9,101 @@ body{
     grid-auto-rows: minmax(150px, auto);
     /* grid-template-columns:  */
     height:100vh;
-    background: #f23557;
-    color: #f0d43a;
+    background: #29546e;
+    color: white;
     justify-content: center;
     grid-gap: 1em;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
 }
 
-.holder{
-
+.bg-dark {
+	background-color: #115f90 !important;
 }
 
-.entry{
-    background: rgba(59, 74, 107, .4);
+.navbar {
+	padding: 20px 0;
 }
 
-#entryHolder{
-
+.input-holder-text {
+	background-color: #115f90;
+	border: none;
+	color: white;
 }
 
-#date{
-
+.input-holder-text:hover {
+	opacity: 0.5;
+	cursor: pointer;
 }
 
-#temp{
-
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-#content{
-
+.uv-index-low {
+	padding: 3px;
+	background-color: green;
+	border-radius: 3px;
+	color: black;
 }
 
-.headline {
-
+.uv-index-moderate {
+	padding: 3px;
+	background-color: yellow;
+	border-radius: 3px;
+	color: black;
 }
-.title{
 
+.uv-index-high {
+	padding: 3px;
+	background-color: orange;
+	border-radius: 3px;
+	color: black;
+}
+
+.uv-index-very-high {
+	padding: 3px;
+	background-color: red;
+	border-radius: 3px;
+	color: black;
+}
+
+.uv-index-extreme {
+	padding: 3px;
+	background-color: violet;
+	border-radius: 3px;
+	color: black;
+}
+
+ul .list-group-item {
+	text-transform: capitalize;
+	transition: all 0.2s;
+}
+
+ul .list-group-item:hover {
+	cursor: pointer;
+	background-color: #115f90;
+	color: white;
+}
+
+i.today {
+	margin: 10px auto;
+	font-size: 60px;
+}
+
+.wi {
+	margin: 10px auto;
+	font-size: 1.5em;
+}
+
+.alert {
+	display: none;
+}
+
+.temp-list li {
+	color: white;
 }
 
 /*  Basic Styling To Override Default For Basic HTML Elements */
